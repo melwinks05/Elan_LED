@@ -43,7 +43,7 @@ function ProductDetails() {
   // PRODUCTION REWRITE: Bypasses the login wall entirely
   const handleAddToCart = () => {
     // Pass the entire product object so the context can populate the cart page correctly
-    addToCart(product); 
+    addToCart(product.id); 
     alert(`${product.name} added to cart! 🛒`);
   };
 
